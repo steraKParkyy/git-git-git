@@ -34,3 +34,8 @@ DOPLNKY:
      Následne napíšem príkaz ":wq" a vrátim sa pekne spať do klasického zobrazenia/módu
 
     git clone https://github.com/yablko/hemingwayovatoro-rotator.git "adresa skopírovaná z git habu" zloźku kam to chem uložiť = stiahne mi pekne všetky súbory konkrétneho projektu 
+
+    // Keď chcem svoj kód nahrať na Git hub:
+    • Na stránke  git hub si vytvorím vytvorím new repositary pomenujem ho, popíšem ho.
+    • Potom postupujem podľa návu priamo na stránke git habu
+    • Malo by to všetko fungovať bez problémov. Git ma prihlási, zadám heslo a frčím   

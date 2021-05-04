@@ -1,0 +1,36 @@
+ZÁKLADY GITu
+/* git hub príkazy: */ pracujem v CMDERI
+
+    git init = vytvorí mi adresár s príponou .git ( ale nie je ju vidno v súbore )
+    git status = ukáže mi čo sa udialo v zložke napr. vytvorenie nového súboru napr. index.hmtl
+    git add názov súboru = označím súbor index.html ( znamená to, že ho má git evidovať alebo sledovať) že ho chcem mať v novej verzií aplikácie ( ale zatiaľ tam nie je, je v medzištádiu )
+    git add . = označím všetky zmenené súbory ( nemusím ich vypisovať po jednom )
+    git commit -m "prvý commit" = potvrdenie pridania súboru index.html do novej verzie aplikácie + -m je komentár k tomu "prvý commit"
+    git log = ukáže mi kto,kedy a v akom súbore urobil zmenu + koment k tomu ( teda ak ho tam dal )
+    git restore --stage názov súboru = odstráni mi konkrétny súbor z medzištádia, čiže nebude sledovaný/nebude pripravény do novej verzie
+    git restore --stage . = odstráni mi všetky súbory z medzištádia, čiže nebudú sledované/nebudú pripravéné do novej verzie
+    git commit -am = príkaz naraz vykona pridanie všetkých súborov + ich commitne a pridá im komentár
+    git commit -a = funguje iba pre upravené súbory ( ak vytvorím nový súbor ktorý nexistoval, musím ho najprv pridať pomocou git add )
+    // Každý git commit vytvorý novú verziu projektu //
+    // Každý jeden commit ma unikátny has kód ktorý mi vypíše pri git log //
+
+    • vždy keď niečo zmením súbore tak si to overím cez príkaz git status
+    • po každej zmene ktorú urobím a chcem ju pridať do novej verzie aplikácie použijem príkaz git add "názov súboru" ( medzištádium )
+    • následne po každej zmene ktorú som vykonal a chcem ju reálne uložiť použijem príkaz git commit -m
+
+DOPLNKY:
+    /* príkazy */
+    git diff = mi ukáže presnú zmenu v súbore napr. v index html som pridal h1 nadpis. Ak chcem z toho vyskočit alebo ukončit prehliadku tak pouźijem klávesu "q"
+    git checkout -- názov súboru = vráti mi poslednú zmenu ktorú som urobil, v mojem prípade mi zmaže pridaný nadpis h1
+
+    // Každý jeden commit ma unikátny haš kód ktorý mi vypíše pri git log // 
+    git checkout -- haš z logu napr.e232820a4e9f1748dc35fd6165f8b9f6db1718f3 = vrátím sa do tej verzie ktorá bola v tom logu uložená, číZe mi to 
+                    vymaže súbory ktoré tam predtým boli atď. Takto si moźem skákať do ktorej verzie aplikácie chcem. 
+    git checkout master = vrátim sa k poslednej commitnutej verzií mojej aplikácie čiže sa mi napr vrátia všetky súbory atď  
+
+    // ak omylom neprídám do git commit žiadny komentár ani "-m" tak sa dostanem do "VIM"
+    -môže sa stať, že sa nedá pisať, tak zmáčknem klávesu "i" ( malo by mi niekde dole naskočiť insert ). 
+     Napíšem čo potrebujem a zmáčkenem klávesu "esc" a vrátím sa do command módu.
+     Následne napíšem príkaz ":wq" a vrátim sa pekne spať do klasického zobrazenia/módu
+
+    git clone https://github.com/yablko/hemingwayovatoro-rotator.git "adresa skopírovaná z git habu" zloźku kam to chem uložiť = stiahne mi pekne všetky súbory konkrétneho projektu 

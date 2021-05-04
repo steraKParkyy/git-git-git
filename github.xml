@@ -37,5 +37,9 @@ DOPLNKY:
 
     // Keď chcem svoj kód nahrať na Git hub:
     • Na stránke  git hub si vytvorím vytvorím new repositary pomenujem ho, popíšem ho.
-    • Potom postupujem podľa návu priamo na stránke git habu
-    • Malo by to všetko fungovať bez problémov. Git ma prihlási, zadám heslo a frčím   
+    • Potom postupujem podľa návudu priamo na stránke git habu
+    • Malo by to všetko fungovať bez problémov. Git ma prihlási, zadám heslo a frčím 
+
+    • Keď urobím nejkaé zmeny ktoré chcem na hrat na git hub server:
+        git push origin main/master ( mne fugovalo main, yalko použil master )
+        git push=natlač origin=server main/master=názov vetvy.

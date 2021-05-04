@@ -42,4 +42,4 @@ DOPLNKY:
 
     • Keď urobím nejkaé zmeny ktoré chcem na hrat na git hub server:
         git push origin main/master ( mne fugovalo main, yalko použil master )
-        git push=natlač origin=server main/master=názov vetvy.
+        git push=natlač origin=server main/master=názov vetvy..
